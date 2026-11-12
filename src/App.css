@@ -1,0 +1,160 @@
+.strona-cs {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tryb-ciemny {
+  background: #101216 !important;
+}
+
+.tryb-jasny {
+  background: #e9ecef !important;
+  color: #212529;
+}
+
+.panel-cs {
+  background: #1a1d23;
+  border: 1px solid #343943;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tryb-jasny .panel-cs {
+  background: #fff;
+  border-color: #ced4da;
+}
+
+.naglowek-cs h1,
+.panel-cs h2,
+.panel-cs h3 {
+  color: #f4f4f5;
+}
+
+.tryb-jasny .panel-cs h1,
+.tryb-jasny .panel-cs h2,
+.tryb-jasny .panel-cs h3 {
+  color: #212529;
+}
+
+.tekst-akcent {
+  color: #ff6a2a !important;
+}
+
+.naglowek-cs {
+  border-color: #3a3f49 !important;
+}
+
+.btn-akcent {
+  color: #fff;
+  background: #e4511e;
+  border-color: #e4511e;
+}
+
+.btn-akcent:hover {
+  color: #fff;
+  background: #bd3f16;
+  border-color: #bd3f16;
+}
+
+.panel-powitanie {
+  color: #f2f2f2;
+  background: #202b35;
+  border-color: #ff6a2a;
+}
+
+.karta-zawodnika {
+  color: #e7e9ed !important;
+  background: #22262d;
+  border: 1px solid #3a414c;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.karta-zawodnika:hover {
+  border-color: #ff6a2a;
+  box-shadow: 0 0 18px rgba(255, 106, 42, 0.22) !important;
+  transform: translateY(-4px);
+}
+
+.tryb-jasny .karta-zawodnika {
+  color: #212529 !important;
+  background: #fff;
+  border-color: #ced4da;
+}
+
+.tryb-jasny .naglowek-cs {
+  border-color: #ced4da !important;
+}
+
+.tryb-jasny .btn-outline-light {
+  color: #212529;
+  border-color: #212529;
+}
+
+.tryb-jasny .btn-outline-light:hover {
+  color: #fff;
+  background: #212529;
+}
+
+.panel-cs .form-control {
+  color: #fff;
+  background: #111318;
+  border-color: #464d59;
+}
+
+.panel-cs .form-control::placeholder {
+  color: #8d95a2;
+}
+
+.panel-cs .alert-warning {
+  color: #f5e3b2;
+  background: #3b3020;
+  border-color: #8e682d;
+}
+
+.zdjecie-zawodnika {
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #303945, #e4511e);
+}
+
+.zdjecie-zawodnika img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.inicjaly-zawodnika {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.karta-zawodnika .card-body {
+  position: relative;
+}
+
+.tryb-jasny .inicjaly-zawodnika {
+  color: #fff;
+}
+
+.stopka-autora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.zdjecie-izaka {
+  width: 180px;
+  height: 110px;
+  border: 2px solid #ff6a2a;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}

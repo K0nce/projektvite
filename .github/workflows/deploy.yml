@@ -1,0 +1,38 @@
+name: Publikacja na GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  publikacja:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Pobierz kod
+        uses: actions/checkout@v4
+      - name: Skonfiguruj Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Zainstaluj zaleznosci
+        run: npm ci
+      - name: Zbuduj aplikacje
+        run: npm run build
+      - name: Skonfiguruj GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Przygotuj pliki strony
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - name: Opublikuj strone
+        id: deployment
+        uses: actions/deploy-pages@v4

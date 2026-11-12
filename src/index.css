@@ -1,0 +1,10 @@
+body {
+  min-width: 320px;
+  background: #101216;
+  color: #e7e9ed;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
